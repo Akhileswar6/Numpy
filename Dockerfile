@@ -6,17 +6,16 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY /NumPy-Cheat-sheets /NumPy-Cheat-sheets
 COPY Numpy1_Tutorial/ Numpy1_Tutorial/
 COPY Numpy2_Random/ Numpy2_Random/
 COPY Numpy3_ufuncs/ Numpy3_ufuncs/
-COPY codedex_numpy.py .
-COPY codeharry_numpy.py .
+COPY run_all.py run_all.py
+
 
 # Install numpy
 RUN pip install numpy
 
 #default command to run when the container starts
-CMD ["python", "codedex_numpy.py"]
+CMD ["python", "run_all.py"]
 
 
