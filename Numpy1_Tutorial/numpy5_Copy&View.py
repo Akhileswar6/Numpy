@@ -7,8 +7,8 @@ import numpy as np
 arr=np.array([2,3,323,12,56])
 x=arr.copy()
 arr[2]=67
-print(arr)
-print(x)
+print("Modified Array -",arr)
+print("Copy Array -",x)
 
 #view
 arr1=np.array([34,56,6789,4575,56])

@@ -14,17 +14,17 @@
 
 import numpy as np
 arr=np.array([1,2,3,4,5])
-print(arr.dtype)
+print("Datatype -",arr.dtype)
 
 arr1=np.array(["apple","banana","cherry"])
-print(arr1.dtype)
+print("Datatype -",arr1.dtype)
 
 #Creating array with defined data type
 arr2=np.array([2,3,4,5], dtype='S')
-print(arr2.dtype)
+print("Creating array with defined data type -",arr2.dtype)
 
 arr3=np.array([1,2,3,4], dtype="i4")
-print(arr3.dtype)
+print("Creating array with defined data type -",arr3.dtype)
 
 #value error
 # arr4=np.array(["a","2","3","4"], dtype="i")

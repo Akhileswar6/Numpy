@@ -7,9 +7,7 @@ WORKDIR /app
 
 # Copy the requirements file into the container
 COPY Numpy1_Tutorial/ Numpy1_Tutorial/
-COPY Numpy2_Random/ Numpy2_Random/
-COPY Numpy3_ufuncs/ Numpy3_ufuncs/
-COPY run_all.py run_all.py
+COPY run_all.py .
 
 
 # Install numpy
